@@ -1,0 +1,19 @@
+:py:mod:`kai._astropy_init`
+===========================
+
+.. py:module:: kai._astropy_init
+
+
+Module Contents
+---------------
+
+.. py:data:: __version__
+   :annotation: = 
+
+   
+
+.. py:data:: __githash__
+   :annotation: = 
+
+   
+

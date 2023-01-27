@@ -55,9 +55,9 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
-          <li><a href="../../index.html">Module code</a> &raquo;</li>
-      <li>kai.reduce.reduce_template</li>
+      <li><a href="../../../index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="../../index.html">Module code</a></li>
+      <li class="breadcrumb-item active">kai.reduce.reduce_template</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -112,7 +112,7 @@
 <span class="c1">#    - run this first thing for a new observing run.</span>
 <span class="c1">##########</span>
 <div class="viewcode-block" id="makelog"><a class="viewcode-back" href="../../../autoapi/kai/reduce/reduce_template/index.html#kai.reduce.reduce_template.makelog">[docs]</a><span class="k">def</span> <span class="nf">makelog</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Make an electronic log from all the files in the ../raw/ directory.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Make an electronic log from all the files in the ../raw/ directory.</span>
 <span class="sd">    The file will be called kai.log and stored in the same directory.</span>
 
 <span class="sd">    @author Jessica Lu</span>
@@ -134,7 +134,7 @@
 <span class="c1"># Analyze darks</span>
 <span class="c1">###############</span>
 <div class="viewcode-block" id="analyze_darks"><a class="viewcode-back" href="../../../autoapi/kai/reduce/reduce_template/index.html#kai.reduce.reduce_template.analyze_darks">[docs]</a><span class="k">def</span> <span class="nf">analyze_darks</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Analyze the dark_calib results</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Analyze the dark_calib results</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">util</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="s1">&#39;calib&#39;</span><span class="p">)</span>
     <span class="n">os</span><span class="o">.</span><span class="n">chdir</span><span class="p">(</span><span class="s1">&#39;calib&#39;</span><span class="p">)</span>
@@ -148,7 +148,7 @@
 <span class="c1"># Reduce</span>
 <span class="c1">##########</span>
 <div class="viewcode-block" id="go"><a class="viewcode-back" href="../../../autoapi/kai/reduce/reduce_template/index.html#kai.reduce.reduce_template.go">[docs]</a><span class="k">def</span> <span class="nf">go</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;Do the full data reduction.</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Do the full data reduction.</span>
 
 <span class="sd">    @author Jessica Lu</span>
 <span class="sd">    @author Sylvana Yelda</span>
@@ -275,7 +275,7 @@
 <span class="c1"># Jackknife</span>
 <span class="c1">############</span>
 <div class="viewcode-block" id="jackknife"><a class="viewcode-back" href="../../../autoapi/kai/reduce/reduce_template/index.html#kai.reduce.reduce_template.jackknife">[docs]</a><span class="k">def</span> <span class="nf">jackknife</span><span class="p">():</span>
-    <span class="sd">&quot;&quot;&quot;</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Perform the Jackknife data reduction. The methodology is as follows:</span>
 <span class="sd">    For N total images, there are N stacked images created by data.combine(),</span>
 <span class="sd">    each of these combo frames consists of N-1 images. The suffix &#39;_{i}&#39; is</span>

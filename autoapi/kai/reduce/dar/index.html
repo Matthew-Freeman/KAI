@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>kai.reduce.dar &mdash; KAI  documentation</title>
@@ -12,10 +12,9 @@
     <script src="../../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/jquery.js"></script>
-        <script src="../../../../_static/underscore.js"></script>
         <script src="../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
         <script src="../../../../_static/doctools.js"></script>
         <script src="../../../../_static/sphinx_highlight.js"></script>
     <script src="../../../../_static/js/theme.js"></script>
@@ -30,11 +29,15 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../../index.html" class="icon icon-home"> KAI
+
+          
+          
+          <a href="../../../../index.html" class="icon icon-home">
+            KAI
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" />
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
     <input type="hidden" name="check_keywords" value="yes" />
     <input type="hidden" name="area" value="default" />
   </form>
@@ -73,7 +76,7 @@
         <div class="rst-content">
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-      <li><a href="../../../../index.html" class="icon icon-home"></a></li>
+      <li><a href="../../../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../../../index.html">API Reference</a></li>
           <li class="breadcrumb-item"><a href="../../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">kai</span></code></a></li>
           <li class="breadcrumb-item"><a href="../index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">kai.reduce</span></code></a></li>
@@ -94,10 +97,6 @@
 <section id="functions">
 <h3>Functions<a class="headerlink" href="#functions" title="Permalink to this heading"></a></h3>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.dar.get_atm_conditions" title="kai.reduce.dar.get_atm_conditions"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_atm_conditions</span></code></a>(year)</p></td>
 <td><p>Retrieve atmospheric conditions from CFHT archive website,</p></td>
@@ -120,10 +119,13 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.dar.applyDAR" title="kai.reduce.dar.applyDAR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">applyDAR</span></code></a>(inputFits, spaceStarlist[, plot, instrument, ...])</p></td>
 <td><p>inputFits: (str) name of fits file associated with this starlist</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.dar.splitAtmosphereCFHT" title="kai.reduce.dar.splitAtmosphereCFHT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">splitAtmosphereCFHT</span></code></a>(year)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.dar.removeDAR" title="kai.reduce.dar.removeDAR"><code class="xref py py-obj docutils literal notranslate"><span class="pre">removeDAR</span></code></a>(inputFits, groundStarlist[, plot, ...])</p></td>
+<td><p>inputFits: (str) name of fits file associated with this starlist</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.dar.splitAtmosphereCFHT" title="kai.reduce.dar.splitAtmosphereCFHT"><code class="xref py py-obj docutils literal notranslate"><span class="pre">splitAtmosphereCFHT</span></code></a>(year)</p></td>
 <td><p>Take an original archive file containing atmospheric parameters and</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.dar.test_darPlusDistortion" title="kai.reduce.dar.test_darPlusDistortion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_darPlusDistortion</span></code></a>()</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.dar.test_darPlusDistortion" title="kai.reduce.dar.test_darPlusDistortion"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_darPlusDistortion</span></code></a>()</p></td>
 <td><p></p></td>
 </tr>
 </tbody>
@@ -132,10 +134,6 @@
 <section id="attributes">
 <h3>Attributes<a class="headerlink" href="#attributes" title="Permalink to this heading"></a></h3>
 <table class="autosummary longtable docutils align-default">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 90%" />
-</colgroup>
 <tbody>
 <tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.dar.p2" title="kai.reduce.dar.p2"><code class="xref py py-obj docutils literal notranslate"><span class="pre">p2</span></code></a></p></td>
 <td><p></p></td>
@@ -182,7 +180,7 @@ refB</p>
 <dd><p>Download the KOA atmospheric condition file for given date and
 specified parameter, and save at the download location</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>date_str</strong><span class="classifier">str</span></dt><dd><p>Date string for the night (e.g.: ‘20220525’).</p>
 </dd>
@@ -206,7 +204,7 @@ Can be ‘k1’ or ‘k2’.</p>
 for two objects observed at Keck, using atmospheric conditions obtained
 via the KOA.</p>
 <dl class="field-list simple">
-<dt class="field-odd">Parameters</dt>
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>lamda</strong><span class="classifier">float</span></dt><dd><p>Effective wavelength (microns), assumed to be the same for both.</p>
 </dd>
@@ -224,7 +222,7 @@ via the KOA.</p>
 </dd>
 </dl>
 </dd>
-<dt class="field-even">Returns</dt>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
 <dd class="field-even"><dl class="simple">
 <dt><strong>refA</strong><span class="classifier">float</span></dt><dd></dd>
 <dt><strong>refB</strong><span class="classifier">float</span></dt><dd></dd>
@@ -282,6 +280,20 @@ after the starlight passed through the atmosphere, but before the
 starlight passed through the telescope. Only achromatic DAR is
 applied in this code.</p>
 <p>returns spaceStarlist with updated ‘x0’ and ‘y0’</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="kai.reduce.dar.removeDAR">
+<span class="sig-prename descclassname"><span class="pre">kai.reduce.dar.</span></span><span class="sig-name descname"><span class="pre">removeDAR</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputFits</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">groundStarlist</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">instrument</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">instruments.default_inst</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">plotdir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/kai/reduce/dar.html#removeDAR"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kai.reduce.dar.removeDAR" title="Permalink to this definition"></a></dt>
+<dd><p>inputFits: (str) name of fits file associated with this starlist</p>
+<p>groundStarlist: (astropy table) must include columns ‘x’ and ‘y’.</p>
+<p>The inverse of applyDAR(). Takes a starlist in x and y pixels taken from
+the ground and removes differential atmospheric refraction (DAR). The amount
+of DAR that is applied depends on the header information in the input fits
+file. The resulting output starlist should contain what would be observed above the atmosphere.
+Distortion should be applied before this function. Only achromatic DAR is
+applied in this code.</p>
+<p>returns groundStarlist with updated ‘x0’ and ‘y0’</p>
 </dd></dl>
 
 <dl class="py function">

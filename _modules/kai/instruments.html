@@ -303,6 +303,20 @@
             <span class="n">scale</span> <span class="o">=</span> <span class="mf">0.0099576</span>
         <span class="k">return</span> <span class="n">scale</span></div>
     
+<div class="viewcode-block" id="OSIRIS.get_pcu_scale"><a class="viewcode-back" href="../../autoapi/kai/instruments/index.html#kai.instruments.OSIRIS.get_pcu_scale">[docs]</a>    <span class="k">def</span> <span class="nf">get_pcu_scale</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">hdr</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        The scale on the PCU pinhole mask, in mm (at the front focus) per pixel</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">scale</span> <span class="o">=</span> <span class="mi">1</span><span class="o">/</span><span class="mf">138.5</span>
+        <span class="k">return</span> <span class="n">scale</span></div>
+
+<div class="viewcode-block" id="OSIRIS.get_pcuxyRef"><a class="viewcode-back" href="../../autoapi/kai/instruments/index.html#kai.instruments.OSIRIS.get_pcuxyRef">[docs]</a>    <span class="k">def</span> <span class="nf">get_pcuxyRef</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span><span class="n">hdr</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        The reference position, when the PCU is on-axis</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">pcuxyRef</span> <span class="o">=</span> <span class="p">[</span><span class="mi">90</span><span class="p">,</span><span class="mi">185</span><span class="p">]</span>       
+        <span class="k">return</span> <span class="n">pcuxyRef</span></div>
+
 <div class="viewcode-block" id="OSIRIS.get_position_angle"><a class="viewcode-back" href="../../autoapi/kai/instruments/index.html#kai.instruments.OSIRIS.get_position_angle">[docs]</a>    <span class="k">def</span> <span class="nf">get_position_angle</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">hdr</span><span class="p">):</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Get the sky PA in degrees East of North. </span>
@@ -314,7 +328,7 @@
         <span class="k">if</span> <span class="s1">&#39;PCUZ&#39;</span> <span class="ow">in</span> <span class="n">hdr</span><span class="o">.</span><span class="n">keys</span><span class="p">:</span>
             <span class="k">if</span> <span class="n">hdr</span><span class="p">[</span><span class="s1">&#39;PCUZ&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">20</span><span class="p">:</span>  
                 <span class="n">pcu_angle</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">hdr</span><span class="p">[</span><span class="s1">&#39;PCUR&#39;</span><span class="p">])</span>
-                <span class="n">pinhole_angle</span> <span class="o">=</span> <span class="mf">65.703</span> <span class="c1">#the angle at which the pihole mask is installed</span>
+                <span class="n">pinhole_angle</span> <span class="o">=</span> <span class="mf">65.703</span> <span class="c1">#the angle at which the pihole mask is horizontal.</span>
                 <span class="c1"># rotator_angle = hdr[&#39;ROTPPOSN&#39;]</span>
                 <span class="c1"># default_rotator_angle = 90</span>
                 <span class="n">pa</span> <span class="o">=</span> <span class="n">pcu_angle</span> <span class="o">-</span> <span class="n">pinhole_angle</span>       

@@ -116,28 +116,31 @@
 <tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.aotsxy2pix" title="kai.reduce.kai_util.aotsxy2pix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">aotsxy2pix</span></code></a>(aotsxy, scale, aotsxyRef[, inst_angle])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.pix2xyarcsec" title="kai.reduce.kai_util.pix2xyarcsec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pix2xyarcsec</span></code></a>(xypix, phi, scale, sgra)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.pcuxy2pix" title="kai.reduce.kai_util.pcuxy2pix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pcuxy2pix</span></code></a>(pcuxy, phi, scale, pcuxyRef)</p></td>
+<td><p>Determine pixel shifts from true RA and Dec positions.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.pix2xyarcsec" title="kai.reduce.kai_util.pix2xyarcsec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">pix2xyarcsec</span></code></a>(xypix, phi, scale, sgra)</p></td>
 <td><p>Determine  E and N offsets from Sgr A* (in arcsec) from</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.xyarcsec2pix" title="kai.reduce.kai_util.xyarcsec2pix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyarcsec2pix</span></code></a>(xyarcsec, phi, scale)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.xyarcsec2pix" title="kai.reduce.kai_util.xyarcsec2pix"><code class="xref py py-obj docutils literal notranslate"><span class="pre">xyarcsec2pix</span></code></a>(xyarcsec, phi, scale)</p></td>
 <td><p>Determine pixel shifts from E and N offsets from Sgr A*.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.rotate_coo" title="kai.reduce.kai_util.rotate_coo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotate_coo</span></code></a>(x, y, phi)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.rotate_coo" title="kai.reduce.kai_util.rotate_coo"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rotate_coo</span></code></a>(x, y, phi)</p></td>
 <td><p>Rotate the coordinates in the <a href="#id1"><span class="problematic" id="id2">*</span></a>.coo files for data sets</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.getScale" title="kai.reduce.kai_util.getScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getScale</span></code></a>(hdr[, instrument])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.getScale" title="kai.reduce.kai_util.getScale"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getScale</span></code></a>(hdr[, instrument])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.getPA" title="kai.reduce.kai_util.getPA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPA</span></code></a>(hdr[, instrument])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.getPA" title="kai.reduce.kai_util.getPA"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getPA</span></code></a>(hdr[, instrument])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.getCentralWavelength" title="kai.reduce.kai_util.getCentralWavelength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCentralWavelength</span></code></a>(hdr[, instrument])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.getCentralWavelength" title="kai.reduce.kai_util.getCentralWavelength"><code class="xref py py-obj docutils literal notranslate"><span class="pre">getCentralWavelength</span></code></a>(hdr[, instrument])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.calcOverhead" title="kai.reduce.kai_util.calcOverhead"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calcOverhead</span></code></a>(tint, coadds, ndithers, nframes, reads[, ...])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.calcOverhead" title="kai.reduce.kai_util.calcOverhead"><code class="xref py py-obj docutils literal notranslate"><span class="pre">calcOverhead</span></code></a>(tint, coadds, ndithers, nframes, reads[, ...])</p></td>
 <td><p></p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#kai.reduce.kai_util.plotKeyword" title="kai.reduce.kai_util.plotKeyword"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotKeyword</span></code></a>(keyword1, keyword2, imgList)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#kai.reduce.kai_util.plotKeyword" title="kai.reduce.kai_util.plotKeyword"><code class="xref py py-obj docutils literal notranslate"><span class="pre">plotKeyword</span></code></a>(keyword1, keyword2, imgList)</p></td>
 <td><p>Pass in a file containing a list of images. For each of these</p></td>
 </tr>
 </tbody>
@@ -200,6 +203,20 @@ specified directory.</p>
 <dt class="sig sig-object py" id="kai.reduce.kai_util.aotsxy2pix">
 <span class="sig-prename descclassname"><span class="pre">kai.reduce.kai_util.</span></span><span class="sig-name descname"><span class="pre">aotsxy2pix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">aotsxy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">aotsxyRef</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inst_angle</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.0</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/kai/reduce/kai_util.html#aotsxy2pix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kai.reduce.kai_util.aotsxy2pix" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="kai.reduce.kai_util.pcuxy2pix">
+<span class="sig-prename descclassname"><span class="pre">kai.reduce.kai_util.</span></span><span class="sig-name descname"><span class="pre">pcuxy2pix</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pcuxy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">phi</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pcuxyRef</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../../../_modules/kai/reduce/kai_util.html#pcuxy2pix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#kai.reduce.kai_util.pcuxy2pix" title="Permalink to this definition"></a></dt>
+<dd><p>Determine pixel shifts from true RA and Dec positions.</p>
+<p>&#64;param pcuxy: a 2-element list containing the PCU x and y in mm.
+&#64;type pcuxy: float list
+&#64;param phi: position angle (E of N) in degrees.
+&#64;type phi: float
+&#64;param scale: mm per pixel.
+&#64;type scale: float
+&#64;param pcuxyRef: 2-element list containing the  PCU x, y positions (in mm) in the reference position.
+&#64;type pcuxyRef: float list</p>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="kai.reduce.kai_util.pix2xyarcsec">
